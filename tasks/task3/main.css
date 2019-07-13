@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav,
+main {
+    border: 2px solid red;
+    display: inline-block;
+}
+
+nav {
+    width: 85px;
+    height: 100%;
+}
+
+main {
+    background-color: #F0F5F6;
+}
+
+.content {
+    background-color: #FFFFFF;
+}
+
+.div1 {
+    border: 2px dashed red;
+    margin: 20px;
+}
