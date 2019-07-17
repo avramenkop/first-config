@@ -1,25 +1,15 @@
-let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-let firstElement;
-let secondElement;
+const result = [];
 
+const findSum = (arr, val) => {
 
-function sum12 () {
-    for (let i = 0; i < array.length; i++) {
-        firstElement = Math.floor(Math.random()* array.length);
-        // console.log(firstElement);
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+            if (arr[i] + arr[j] === val) {
+                result.push([i,j])
+            }
+        }
     }
+    return result;
+};
 
-    for (let j = array.length-1; j >= 0; j--) {
-        secondElement = Math.floor(Math.random()* array.length);
-        // console.log(secondElement);
-    }
-
-    if(firstElement + secondElement === 12) {
-        console.log(firstElement, secondElement)
-    } else {
-        console.log("Oops. Try again later")
-    }
-}
-
-sum12();
-
+console.log(findSum([7, 4, 8, 4, 5], 12));
