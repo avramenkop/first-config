@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
+    color: #707070;
 }
 
 body {
@@ -12,12 +14,13 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
+    color: #707070;
 }
 
 .menu {
     display: flex;
     flex-flow: column;
-    width: 100px;
+    min-width: 100px;
     height: 100vh;
 }
 
@@ -29,7 +32,7 @@ body {
     align-items: center;
 }
 
-.nav {
+.nav ul {
     height: 500px;
     width: 100%;
     display: flex;
@@ -37,7 +40,10 @@ body {
     justify-content: space-around;
     align-items: center;
     padding-top: 80px;
+    list-style-type: none;
 }
+
+
 
 .content {
     width: 100%;
@@ -60,7 +66,6 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .instructions {
@@ -70,42 +75,54 @@ body {
     flex-flow: column;
     background: white;
     border-radius: 15px;
+    /*padding: 30px 30px 0 30px;*/
     margin-bottom: 10px;
-    padding: 30px 30px 0 30px;
+    box-shadow: 0 2px 5px 0 rgba(1, 1, 1, 0.1);
 }
 
-.ih {
+.drop-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 3px dashed grey;
-    width: 100%;
+    margin: 30px 32px;
+    border: 1.5px dashed grey;
     height: 100%;
     border-radius: 15px;
+    line-height: 1.85714286;
 }
 
-.if {
+
+
+.drop-wrapper a {
+    text-decoration: none;
+    color: #1E75BB;
+    font-weight: 900;
+}
+
+.button-wrapper {
     display: flex;
     justify-content: center;
-
-    /*Работает как-то криво, не пойму по чем идет выравнивание*/
-    /*align-items: center;*/
-
-
-    width: 100%;
-    height: 100px;
+    align-items: center;
+    min-width: 800px;
+    min-height: 100px;
 }
 
 .button {
     display: flex;
     width: 30%;
     height: 50px;
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
+    color: #1E75BB;
     border: 1.5px solid #1E75BB;
+    box-shadow: 0 1px 6px #1e75bb, inset 0 1px 2px #1e75bb;
     border-radius: 40px;
+}
+
+.button:hover {
+    background: #E4EEF7;
+    cursor: pointer;
 }
 
 .links {
@@ -115,12 +132,27 @@ body {
     justify-content: space-between;
 }
 
+.links p {
+    width: 105px;
+}
+
+.links a,
+.socials_wrapper a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
 
 .footer {
     display: flex;
     flex-flow: column;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     align-items: center;
 }
 
