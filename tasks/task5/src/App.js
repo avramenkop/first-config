@@ -1,8 +1,8 @@
-import React from 'react';
-import {cars, Cars} from './Cars';
-
-let App = cars
-    .map(car => <Cars name={car.name} year={car.year} price={car.price} img={car.img} /> );
+import {CarsPage} from './CarsPage';
+export {CarsPage};
 
 
-export default App;
+
+
+
+
