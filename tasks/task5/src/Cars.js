@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
 
 
-let Car = (props) => {
+export default (props) => {
     return (
         <div className="car">
             <div className="car-img">
@@ -15,4 +14,3 @@ let Car = (props) => {
     )
 };
 
-export default Car;
