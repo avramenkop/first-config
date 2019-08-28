@@ -23,8 +23,12 @@ const carsList = [
     }
 ];
 
-const CarsPage = (carsList
-    .map(car => <Car name={car.name} year={car.year} price={car.price} img={car.img} /> ));
+// const CarsPage = (carsList
+//     .map(car => <Car name={car.name} year={car.year} price={car.price} img={car.img} /> ));
+//
+// export {CarsPage};
 
+export const CarsPage = () => {
+    return carsList.map(car => <Car name={car.name} year={car.year} price={car.price} img={car.img} /> )
+};
 
-export {CarsPage};
